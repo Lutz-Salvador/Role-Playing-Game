@@ -1,0 +1,109 @@
+<!--
+  Document Type Declaration: This is the document type declaration,
+  indicating that this is an HTML document.
+-->
+<!DOCTYPE html>
+
+<!--
+  Root element of the HTML document.
+  The lang attribute specifies the language of the document.
+-->
+<html lang="en">
+
+<!--
+  Head section: contains metadata about the document.
+-->
+<head>
+  <!--
+    Character encoding declaration: specifies the character encoding used.
+  -->
+  <meta charset="utf-8">
+ 
+  <!--
+    Link to external stylesheet (CSS).
+  -->
+  <link rel="stylesheet" href="./style.css">
+ 
+  <!--
+    Document title: displayed in browser title bar.
+  -->
+  <title>RPG - Dragon Repeller</title>
+</head>
+
+<!--
+  Body section: contains the content of the HTML document.
+-->
+<body>
+  <!--
+    Game container: wraps all game-related elements.
+  -->
+  <div id="game">
+   
+    <!--
+      Player stats display.
+    -->
+    <div id="stats">
+      <!--
+        XP display.
+      -->
+      <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
+     
+      <!--
+        Health display.
+      -->
+      <span class="stat">Health: <strong><span id="healthText">100</span></strong></span>
+     
+      <!--
+        Gold display.
+      -->
+      <span class="stat">Gold: <strong><span id="goldText">50</span></strong></span>
+    </div>
+   
+    <!--
+      Game controls (buttons).
+    -->
+    <div id="controls">
+      <!--
+        Button to go to store.
+      -->
+      <button id="button1">Go to store</button>
+     
+      <!--
+        Button to go to cave.
+      -->
+      <button id="button2">Go to cave</button>
+     
+      <!--
+        Button to fight dragon.
+      -->
+      <button id="button3">Fight dragon</button>
+    </div>
+   
+    <!--
+      Monster stats display.
+    -->
+    <div id="monsterStats">
+      <!--
+        Monster name display.
+      -->
+      <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
+     
+      <!--
+        Monster health display.
+      -->
+      <span class="stat">Health: <strong><span id="monsterHealth"></span></strong></span>
+    </div>
+   
+    <!--
+      Game text/output display.
+    -->
+    <div id="text">
+      Welcome to Dragon Repeller. You must defeat the dragon that is preventing people from leaving the town. You are in the town square. Where do you want to go? Use the buttons above.
+    </div>
+  </div>
+ 
+  <!--
+    Link to external JavaScript file.
+  -->
+  <script src="/scripts.js"></script>
+</body>
